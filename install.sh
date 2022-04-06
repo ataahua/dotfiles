@@ -3,22 +3,22 @@ export INSTALL_ZSH=true
 export USERNAME=`whoami`
 
 ## update and install required packages
-sudo apt-get update
-sudo apt-get -y install --no-install-recommends apt-utils dialog 2>&1
-sudo apt-get install -y \
-  curl \
-  git \
-  gnupg2 \
-  jq \
-  sudo \
-  openssh-client \
-  less \
-  iproute2 \
-  procps \
-  wget \
-  unzip \
-  apt-transport-https \
-  lsb-release 
+# sudo apt-get update
+# sudo apt-get -y install --no-install-recommends apt-utils dialog 2>&1
+# sudo apt-get install -y \
+#   curl \
+#   git \
+#   gnupg2 \
+#   jq \
+#   sudo \
+#   openssh-client \
+#   less \
+#   iproute2 \
+#   procps \
+#   wget \
+#   unzip \
+#   apt-transport-https \
+#   lsb-release 
 
 # Install Azure CLI
 # echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $(lsb_release -cs) main" | sudo tee -a /etc/apt/sources.list.d/azure-cli.list
@@ -46,7 +46,7 @@ then
     echo "source $PWD/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 fi
 
-# Cleanup
-sudo apt-get autoremove -y
-sudo apt-get autoremove -y
-sudo rm -rf /var/lib/apt/lists/*
+# # Cleanup
+# sudo apt-get autoremove -y
+# sudo apt-get autoremove -y
+# sudo rm -rf /var/lib/apt/lists/*
